@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    
+    <header class="bg-header">
+        <section>
+            <div class=" text-center pt-16">
+                <h1 class="text-yellow-600 text-6xl ">Select Best Five  Player</h1>
+            <p class="text-emerald-50 text-3xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+                nostrud amet</p>
+            </div>
+        </section>
+    </header>
+
+
+
+
+    <section class="conteinar mt-8 mr-8">
+        <div class="grid grid-cols-3 gap-3 mr-8 " id="player-field">
+            <div class="player-list">
+                <img class="" src="img/messi.jpg" alt="" srcset="">
+                <div class="text-center">
+                    <h2 id="messi">Lionel Messi</h2>
+                <p>36 Goals . 120 Assist</p>
+                <button id="select-messi" class="bnt-select">SELECT</button>
+                </div>
+            </div>
+            <div class="player-list">
+                <img class="" src="img/Neymar Jr.jpeg" alt="" srcset="">
+                <div class="text-center">
+                    <h2 >Neymar Jr </h2>
+                <p>36 Goals . 120 Assist</p>
+                <button class="bnt-select">SELECT</button>
+                </div>
+            </div>
+            <div class="player-list">
+                <img class="" src="img/Kylian Mbappé.jpg" alt="" srcset="">
+                <div class="text-center">
+                    <h2 >Kylian Mbappé</h2>
+                <p>36 Goals . 120 Assist</p>
+                <button class="bnt-select">SELECT</button>
+                </div>
+            </div>
+            <div class="player-list">
+                <img class="" src="img//Vítor Machado.jpg" alt="" srcset="">
+                <div class="text-center">
+                    <h2 >Vítor Machado</h2>
+                <p>36 Goals . 120 Assist</p>
+                <button class="bnt-select">SELECT</button>
+                </div>
+            </div>
+            <div class="player-list">
+                <img class="" src="img/Sergio Ramos.jpeg" alt="" srcset="">
+                <div class="text-center">
+                    <h2 >Sergio Ramos</h2>
+                <p>36 Goals . 120 Assist</p>
+                <button class="bnt-select">SELECT</button>
+                </div>
+            </div>
+            <div class="player-list">
+                <img class="" src="img/Renato Sanchesjpg.jpg" alt="" srcset="">
+                <div class="text-center">
+                    <h2 >Renato Sanches</h2>
+                <p>36 Goals . 120 Assist</p>
+                <button class="bnt-select">SELECT</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="conteinar "> 
+       <div class="">
+        <div class="selected-list text-center ">
+            <h2 >Selected-V</h2>
+            <ul id="player-selected">
+                <li>lionel messi</li>
+            </ul>
+        </div>
+        <div class="selected-list mt-8 ">
+            <h2 class="text-center text-5xl">Budget</h2>
+            <div class="">
+            <p class="text-xl inline-flex">Per Player</p>
+            <input id="player-input" type="text inline-flex" placeholder="1000">
+            <button id="btn-calculat-field" class="block btn-calculat">Calculate</button>
+            </div>
+            <h3 class="inline-flex text-3xl">Player Expenses</h3> <h2 class="inline-flex text-3xl">$<span id="expenses">5000</span></h2>
+            <h4 class="inline-flex">Manager</h4> 
+            <input id="manager" class="inline-flex" type="text" placeholder="2000">
+            <h4 class="">coach</h4>
+            <input id="coach" class="inline-flex" type="text" placeholder="4000">
+            <button id="btn-total" class="total-calculat">Calculate Total</button>
+            <h4>Total</h4> <h4>$<span id="total-amount">11000</span></h4>
+        </div>
+       <!-- </div> -->
+    </section>
+
+
+
+<script src="js/selected-player.js"></script>
+   
+  </body>
+</html>

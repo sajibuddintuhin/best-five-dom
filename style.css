@@ -1,0 +1,48 @@
+body{
+    background-color: #151515;
+}
+
+.bg-header{
+    height: 450px;
+    background-color: black;
+}
+.player-list{
+    color: white;
+    width: 350px ;
+    height: 475px;
+    margin-left: 20px;
+}
+.player-list img{
+    width: 300px;
+    height: 270px;
+}
+.bnt-select{
+    background-color: blue;
+    width: 50%;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.selected-list{
+    display: block;
+    background-color: blue;
+    width: 350px;
+    height: 371px;
+}
+.conteinar{
+    display: inline-flex;
+    
+}
+.btn-calculat{
+    background-color: rgb(133, 133, 229);
+    width: 50%;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 92px;
+}
+.total-calculat{
+    background-color: rgb(133, 133, 229);
+    width: 50%;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 92px;
+}
