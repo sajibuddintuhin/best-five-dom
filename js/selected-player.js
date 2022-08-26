@@ -1,15 +1,59 @@
+const playerArrya = [];
 
 
-document.getElementById('select-messi').addEventListener('click', function(button){
-    const nameFildMessi = document.getElementById('messi');
-    // const nameSelect = nameFildMessi.innerText;
-    console.log(nameFildMessi)
+function display(cartPlayer){
 
-    const playerSelectedFild = document.getElementById('player-selected');
+    const tableBody = document.getElementById('player-tbody');
+    tableBody.innerText = '';
 
-    const playerSelectedStirme =playerSelectedFild.innerText;   
     
-})
+      for(let i = 0; i < 5; i++ ){
+
+        const name = playerArrya[i].playerName;
+
+        const tr = document.createElement("tr");
+
+        tr.innerHTML = `
+            <th>${i + 1}</th>
+            <td>${name}</td>
+        `;
+        tableBody.appendChild(tr);
+        
+    }
+}
+function selectAll(element){
+    const playerName = element.parentNode.children[0].innerText;
+    
+
+    const playerObj = {
+        playerName : playerName ,
+    }
+    playerArrya.push(playerObj)
+    
+
+    document.getElementById('add-player').innerText = playerArrya.length
+    display(playerArrya);
+
+
+    const selectPlayerName = document.getElementById('player-tbody')
+    console.log(selectPlayerName.length)
+}
+
+
+
+
+
+
+// document.getElementById('select-messi').addEventListener('click', function(button){
+//     const nameFildMessi = document.getElementById('messi');
+//     // const nameSelect = nameFildMessi.innerText;
+//     console.log(nameFildMessi)
+
+//     const playerSelectedFild = document.getElementById('player-selected');
+
+//     const playerSelectedStirme =playerSelectedFild.innerText;   
+    
+// })
 
 document.getElementById('btn-calculat-field').addEventListener('click', function(){
    

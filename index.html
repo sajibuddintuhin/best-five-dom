@@ -30,7 +30,7 @@
                 <div class="text-center">
                     <h2 id="messi">Lionel Messi</h2>
                 <p>36 Goals . 120 Assist</p>
-                <button id="select-messi" class="bnt-select">SELECT</button>
+                <button onclick="selectAll(this)" id="select-messi" class="bnt-select">SELECT</button>
                 </div>
             </div>
             <div class="player-list">
@@ -38,7 +38,7 @@
                 <div class="text-center">
                     <h2 >Neymar Jr </h2>
                 <p>36 Goals . 120 Assist</p>
-                <button class="bnt-select">SELECT</button>
+                <button onclick="selectAll(this)" class="bnt-select">SELECT</button>
                 </div>
             </div>
             <div class="player-list">
@@ -46,7 +46,7 @@
                 <div class="text-center">
                     <h2 >Kylian Mbappé</h2>
                 <p>36 Goals . 120 Assist</p>
-                <button class="bnt-select">SELECT</button>
+                <button onclick="selectAll(this)" class="bnt-select">SELECT</button>
                 </div>
             </div>
             <div class="player-list">
@@ -54,7 +54,7 @@
                 <div class="text-center">
                     <h2 >Vítor Machado</h2>
                 <p>36 Goals . 120 Assist</p>
-                <button class="bnt-select">SELECT</button>
+                <button onclick="selectAll(this)" class="bnt-select">SELECT</button>
                 </div>
             </div>
             <div class="player-list">
@@ -62,7 +62,7 @@
                 <div class="text-center">
                     <h2 >Sergio Ramos</h2>
                 <p>36 Goals . 120 Assist</p>
-                <button class="bnt-select">SELECT</button>
+                <button onclick="selectAll(this)" class="bnt-select">SELECT</button>
                 </div>
             </div>
             <div class="player-list">
@@ -70,7 +70,7 @@
                 <div class="text-center">
                     <h2 >Renato Sanches</h2>
                 <p>36 Goals . 120 Assist</p>
-                <button class="bnt-select">SELECT</button>
+                <button onclick="selectAll(this)" class="bnt-select">SELECT</button>
                 </div>
             </div>
         </div>
@@ -78,10 +78,21 @@
     <section class="conteinar "> 
        <div class="">
         <div class="selected-list text-center ">
-            <h2 >Selected-V</h2>
-            <ul id="player-selected">
-                <li>lionel messi</li>
-            </ul>
+            <h2>Selected-V <span id="add-player">0</span></h2>
+            <table class="table table-zebra ">
+                <thead >
+                    <!-- <tr class="text-center">
+                        <th>1</th>
+                        <th>heelo</th>
+                    </tr> -->
+                </thead>
+                <tbody id="player-tbody">
+                    <!-- <tr>
+                        <th>1</th>
+                        <td>meddi</td>
+                    </tr> -->
+                </tbody>
+            </table>
         </div>
         <div class="selected-list mt-8 ">
             <h2 class="text-center text-5xl">Budget</h2>
